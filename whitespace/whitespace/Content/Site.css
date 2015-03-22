@@ -1,0 +1,90 @@
+﻿body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+  max-width: 280px;
+}
+/* styles for validation helpers */
+.field-validation-error {
+  color: #b94a48;
+}
+.field-validation-valid {
+  display: none;
+}
+input.input-validation-error {
+  border: 1px solid #b94a48;
+}
+input[type="checkbox"].input-validation-error {
+  border: 0 none;
+}
+.validation-summary-errors {
+  color: #b94a48;
+}
+.validation-summary-valid {
+  display: none;
+}
+.w-50 {
+  width: 50%;
+}
+.w-60 {
+  width: 60%;
+}
+.w-70 {
+  width: 70%;
+}
+.w-80 {
+  width: 80%;
+}
+.w-90 {
+  width: 90%;
+}
+.w-100 {
+  width: 100%;
+}
+.background-sketch {
+  background-image: url("images/sketch.jpg");
+  background-size: 100% 100%;
+  min-height: 100%;
+}
+.major-statement {
+  display: block;
+  font-size: 32px;
+  padding: 40px 0 40px 0;
+  font-weight: bold;
+  position: relative;
+}
+.section {
+  min-height: 400px;
+}
+.main-logo {
+  max-width: 1000px;
+  width: 100%;
+  padding: 60px 0 0 0;
+}
+.relative {
+  position: relative;
+}
+.bottom-center-text {
+  border: 1px solid #f00;
+}
+.drafting-block {
+  background-color: #e8e8dd;
+}
+.title {
+  padding-bottom: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.content {
+  padding: 15px 15px;
+}
+.question {
+  margin-bottom: 22px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+/*# sourceMappingURL=Site.css.map */

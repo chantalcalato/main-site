@@ -1,0 +1,118 @@
+﻿@import "bootstrap/variables.less";
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.background-sketch {
+    background-image: url("images/sketch.jpg");
+    background-size: 100% 100%;
+    min-height: 100%;
+}
+
+.major-statement {
+    display: block;
+    font-size: @font-size-base*2.0;
+    padding: 40px 0 40px 0;
+    font-weight: bold;
+    position: relative;
+}
+
+.section {
+    min-height: 400px;
+}
+
+.main-logo {
+    max-width:1000px;
+    width:100%;
+    padding: 60px 0 0 0;
+}
+
+.relative {
+    position: relative;
+}
+
+.bottom-center-text {
+    border: 1px solid #f00;
+}
+
+//@base-drafting-color:         rgb(244, 245, 239);
+@base-drafting-color:         rgb(244, 244, 239);
+@drafting-color:              darken(@base-drafting-color, 6%);
+
+.drafting-block {
+    background-color: @drafting-color;
+}
+
+.title {
+    padding-bottom: 10px;
+    font-family: @font-family-serif;
+}
+
+.content {
+    padding: 15px 15px;
+}
+
+.question {
+    margin-bottom: @line-height-computed;
+    font-size: floor((@font-size-base * 1.15));
+    font-weight: 700;
+    line-height: 1.4;
+}
