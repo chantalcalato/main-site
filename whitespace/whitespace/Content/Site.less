@@ -37,6 +37,10 @@ input[type="checkbox"].input-validation-error {
     display: none;
 }
 
+.w-33 {
+    width: 33%;
+}
+
 .w-50 {
     width: 50%;
 }
@@ -61,6 +65,29 @@ input[type="checkbox"].input-validation-error {
     width: 100%;
 }
 
+.align-right {
+    //position: absolute;
+    //right: 0;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.relative {
+    position: relative;
+}
+
+.bottom-center-text {
+    border: 1px solid #f00;
+}
+
+.content {
+    padding: 15px 15px;
+}
+
+//==== backgrounds =====
+
 .background-stretch {
     background-size: 100% 100%;
     min-height: 100%;
@@ -84,6 +111,13 @@ input[type="checkbox"].input-validation-error {
     .background-fixed;
 }
 
+.background-imgquote {
+    background-image: url("images/quote-image.png");
+    .background-fixed;
+}
+
+//===== Statements =======
+
 .major-statement {
     display: block;
     font-size: @font-size-larger;
@@ -92,21 +126,30 @@ input[type="checkbox"].input-validation-error {
     position: relative;
 }
 
-.section {
+.huge-statement {
+    display: block;
+    font-size: @font-size-huge;
+    padding: 40px 0 40px 0;
+    font-weight: bold;
+    position: relative;
+}
+
+.title {
+    padding-bottom: 10px;
+    font-family: @font-family-serif;
+}
+
+.question {
+    margin-bottom: @line-height-computed;
+    font-size: floor((@font-size-base * 1.15));
+    font-weight: 700;
+    line-height: 1.4;
 }
 
 .main-logo {
     max-width:1000px;
     width:100%;
     padding: 60px 0 0 0;
-}
-
-.relative {
-    position: relative;
-}
-
-.bottom-center-text {
-    border: 1px solid #f00;
 }
 
 //@base-drafting-color:         rgb(244, 245, 239);
@@ -117,18 +160,30 @@ input[type="checkbox"].input-validation-error {
     background-color: @drafting-color;
 }
 
-.title {
-    padding-bottom: 10px;
-    font-family: @font-family-serif;
+//====== Images and Blocks ========
+
+.post-it {
+    width: 180px;
+    height: 190px;
+    background-color: @btn-info-bg;
+    text-align: center;
 }
 
-.content {
-    padding: 15px 15px;
+.block-container {
+    width: 100%;
+    background-color: @btn-warning-bg;
+
+    h3 {
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
 }
 
-.question {
-    margin-bottom: @line-height-computed;
-    font-size: floor((@font-size-base * 1.15));
-    font-weight: 700;
-    line-height: 1.4;
+.icon-container {
+    padding-top: 80px;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
 }

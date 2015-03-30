@@ -27,6 +27,9 @@ input[type="checkbox"].input-validation-error {
 .validation-summary-valid {
   display: none;
 }
+.w-33 {
+  width: 33%;
+}
 .w-50 {
   width: 50%;
 }
@@ -44,6 +47,18 @@ input[type="checkbox"].input-validation-error {
 }
 .w-100 {
   width: 100%;
+}
+.text-justify {
+  text-align: justify;
+}
+.relative {
+  position: relative;
+}
+.bottom-center-text {
+  border: 1px solid #f00;
+}
+.content {
+  padding: 15px 15px;
 }
 .background-stretch {
   background-size: 100% 100%;
@@ -69,6 +84,14 @@ input[type="checkbox"].input-validation-error {
   background-position: center top;
   background-attachment: fixed;
 }
+.background-imgquote {
+  background-image: url("images/quote-image.png");
+  background-size: cover;
+  min-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+}
 .major-statement {
   display: block;
   font-size: 34px;
@@ -76,31 +99,50 @@ input[type="checkbox"].input-validation-error {
   font-weight: bold;
   position: relative;
 }
-.main-logo {
-  max-width: 1000px;
-  width: 100%;
-  padding: 60px 0 0 0;
-}
-.relative {
+.huge-statement {
+  display: block;
+  font-size: 88px;
+  padding: 40px 0 40px 0;
+  font-weight: bold;
   position: relative;
-}
-.bottom-center-text {
-  border: 1px solid #f00;
-}
-.drafting-block {
-  background-color: #e8e8dd;
 }
 .title {
   padding-bottom: 10px;
   font-family: Georgia, "Times New Roman", Times, serif;
-}
-.content {
-  padding: 15px 15px;
 }
 .question {
   margin-bottom: 28px;
   font-size: 23px;
   font-weight: 700;
   line-height: 1.4;
+}
+.main-logo {
+  max-width: 1000px;
+  width: 100%;
+  padding: 60px 0 0 0;
+}
+.drafting-block {
+  background-color: #e8e8dd;
+}
+.post-it {
+  width: 180px;
+  height: 190px;
+  background-color: #5bc0de;
+  text-align: center;
+}
+.block-container {
+  width: 100%;
+  background-color: #f0ad4e;
+}
+.block-container h3 {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.icon-container {
+  padding-top: 80px;
+}
+.icon {
+  width: 100px;
+  height: 100px;
 }
 /*# sourceMappingURL=Site.css.map */
