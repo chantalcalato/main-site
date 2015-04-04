@@ -69,3 +69,10 @@ C:\code_repo\whitespace_new\whitespace\whitespace\obj\Debug\whitespace.csprojRes
 C:\code_repo\whitespace_new\whitespace\whitespace\obj\Debug\ASP.NET_MVC5_Bootstrap3_3_1_LESS.dll
 C:\code_repo\whitespace_new\whitespace\whitespace\obj\Debug\ASP.NET_MVC5_Bootstrap3_3_1_LESS.pdb
 C:\code_repo\whitespace_new\whitespace\whitespace\bin\Content\images\Whitespace-Logo-standard-painting-med.png
+C:\code_repo\whitespace_new\whitespace\whitespace\bin\Content\images\team.jpg
+C:\code_repo\whitespace_new\whitespace\whitespace\bin\Content\images\quote-image.png
+C:\code_repo\whitespace_new\whitespace\whitespace\bin\Content\images\icon-biz.jpg
+C:\code_repo\whitespace_new\whitespace\whitespace\bin\Content\images\icon-resume.png
+C:\code_repo\whitespace_new\whitespace\whitespace\bin\Content\images\icon-tie.png
+C:\code_repo\whitespace_new\whitespace\whitespace\bin\Content\images\mentor-image.jpg
+C:\code_repo\whitespace_new\whitespace\whitespace\bin\Content\images\map.jpg

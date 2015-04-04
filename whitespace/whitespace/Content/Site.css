@@ -48,6 +48,10 @@ input[type="checkbox"].input-validation-error {
 .w-100 {
   width: 100%;
 }
+.align-right {
+  position: absolute;
+  right: 0;
+}
 .text-justify {
   text-align: justify;
 }
@@ -56,6 +60,10 @@ input[type="checkbox"].input-validation-error {
 }
 .bottom-center-text {
   border: 1px solid #f00;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: right;
 }
 .content {
   padding: 15px 15px;
@@ -64,11 +72,13 @@ input[type="checkbox"].input-validation-error {
   background-size: 100% 100%;
   min-height: 100%;
 }
-.background-fixed {
+.background-keep-aspect {
   background-size: cover;
   min-width: 100%;
   background-repeat: no-repeat;
   background-position: center top;
+}
+.background-fixed {
   background-attachment: fixed;
 }
 .background-imgsketch {
@@ -91,6 +101,25 @@ input[type="checkbox"].input-validation-error {
   background-repeat: no-repeat;
   background-position: center top;
   background-attachment: fixed;
+}
+.background-imgmentor {
+  background-image: url("images/mentor-image.jpg");
+  background-size: cover;
+  min-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.background-light {
+  background-color: #e8e8dd;
+}
+.background-dark {
+  background-color: #2c2c1f;
+}
+.background-dark p {
+  color: #fcf8e3;
+}
+.background-dark h1 {
+  color: #fcf8e3;
 }
 .major-statement {
   display: block;
@@ -119,27 +148,37 @@ input[type="checkbox"].input-validation-error {
 .main-logo {
   max-width: 1000px;
   width: 100%;
-  padding: 60px 0 0 0;
-}
-.drafting-block {
-  background-color: #e8e8dd;
+  padding: 120px 0 0 0;
 }
 .post-it {
   width: 180px;
   height: 190px;
-  background-color: #5bc0de;
+  background-color: #e8e8dd;
   text-align: center;
 }
+/*.post-it:hover {
+    background-color: #FFCCCC;
+    width:200px;
+    height:200px;
+    -ms-transform: scaleX(1.50); // IE 9 
+    -webkit-transform: scaleX(1.50); // Safari 
+    transform: scaleX(1.50);
+}*/
 .block-container {
   width: 100%;
-  background-color: #f0ad4e;
+  background-color: #e8e8dd;
 }
 .block-container h3 {
-  padding-top: 10px;
-  padding-bottom: 5px;
+  padding: 30px 30px 5px 30px;
+}
+.block-container p {
+  padding: 5px 30px 30px 30px;
+  text-align: justify;
 }
 .icon-container {
   padding-top: 80px;
+  position: relative;
+  width: 100%;
 }
 .icon {
   width: 100px;

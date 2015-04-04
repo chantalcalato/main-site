@@ -66,8 +66,8 @@ input[type="checkbox"].input-validation-error {
 }
 
 .align-right {
-    //position: absolute;
-    //right: 0;
+    position: absolute;
+    right: 0;
 }
 
 .text-justify {
@@ -80,6 +80,10 @@ input[type="checkbox"].input-validation-error {
 
 .bottom-center-text {
     border: 1px solid #f00;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: right;
 }
 
 .content {
@@ -93,11 +97,14 @@ input[type="checkbox"].input-validation-error {
     min-height: 100%;
 }
 
-.background-fixed {
+.background-keep-aspect {
     background-size: cover;
     min-width: 100%;
     background-repeat: no-repeat;
     background-position: center top;
+}
+
+.background-fixed {
     background-attachment: fixed;
 }
 
@@ -108,12 +115,39 @@ input[type="checkbox"].input-validation-error {
 
 .background-imgteam {
     background-image: url("images/team.jpg");
+    .background-keep-aspect;
     .background-fixed;
 }
 
 .background-imgquote {
     background-image: url("images/quote-image.png");
+    .background-keep-aspect;
     .background-fixed;
+}
+
+.background-imgmentor {
+    background-image: url("images/mentor-image.jpg");
+    .background-keep-aspect;
+}
+
+@base-drafting-color:         rgb(244, 244, 239);
+@drafting-color:              darken(@base-drafting-color, 6%);
+@darkbg-color:                darken(@base-drafting-color, 80%);
+
+.background-light {
+    background-color: @drafting-color;
+}
+
+.background-dark {
+    background-color: @darkbg-color;
+
+    p {
+        color: @alert-warning-bg;
+    }
+
+    h1 {
+        color: @alert-warning-bg;
+    }
 }
 
 //===== Statements =======
@@ -149,15 +183,7 @@ input[type="checkbox"].input-validation-error {
 .main-logo {
     max-width:1000px;
     width:100%;
-    padding: 60px 0 0 0;
-}
-
-//@base-drafting-color:         rgb(244, 245, 239);
-@base-drafting-color:         rgb(244, 244, 239);
-@drafting-color:              darken(@base-drafting-color, 6%);
-
-.drafting-block {
-    background-color: @drafting-color;
+    padding: 120px 0 0 0;
 }
 
 //====== Images and Blocks ========
@@ -165,22 +191,41 @@ input[type="checkbox"].input-validation-error {
 .post-it {
     width: 180px;
     height: 190px;
-    background-color: @btn-info-bg;
+    background-color: @drafting-color;
     text-align: center;
+    
+    //-webkit-transition:width 0.5s, height 0.5s, background-color 0.5s, -webkit-transform 0.5s;
+    //transition:width 0.5s, height 0.5s, background-color 0.5s, transform 0.5s;
 }
+
+// no animations right now
+/*.post-it:hover {
+    background-color: #FFCCCC;
+    width:200px;
+    height:200px;
+    -ms-transform: scaleX(1.50); // IE 9 
+    -webkit-transform: scaleX(1.50); // Safari 
+    transform: scaleX(1.50);
+}*/
 
 .block-container {
     width: 100%;
-    background-color: @btn-warning-bg;
+    background-color: @drafting-color;
 
     h3 {
-        padding-top: 10px;
-        padding-bottom: 5px;
+        padding: 30px 30px 5px 30px;
+    }
+
+    p {
+        padding: 5px 30px 30px 30px;
+        .text-justify;
     }
 }
 
 .icon-container {
     padding-top: 80px;
+    position: relative;
+    width: 100%;
 }
 
 .icon {
