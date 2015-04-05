@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>Whitespace Studio</title>
     <meta name="description" content="My ASP.NET Application" />
     @Styles.Render("~/bundles/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -17,7 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", null, new { @class = "navbar-brand" })
+                <a href="./"><img src="~/Content/images/whitespace-logo-mountain.png" class="logo-sm"/></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -33,11 +33,33 @@
     </div>
     <div>
         @RenderBody()
-        <hr />
         <footer>
-            <div class="text-center">
-                Phone: 716.242.9731 | Email: info@whitespace.ninja
+            <div class="container background-imgbuffalo section relative">
+                <div class="h-100">
+                    <div class="row">
+                        <div class="col-md-12 relative">
+                            <div class="final-thought">
+                                some ninjas hide in the shadows <br>
+                                ours dwell in the whitespace
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row background-black bottom-center-text w-100">
+                        <div class="col-md-12">
+                            <p class="text-center">
+                                Phone: 716.242.9731 | Email: info@whitespace.ninja
+                            </p>
+                            <div class="relative w-100">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/whitespaceninja" target="_blank"><img src="~/Content/images/facebook_logo_blue.png" class="icon-sm center-block" /></a></li>
+                                    <li><a href="https://twitter.com/whitespaceninja" target="_blank"><img src="~/Content/images/twitter_logo_blue.png" class="icon-sm center-block" /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+                            
         </footer>
     </div>
 

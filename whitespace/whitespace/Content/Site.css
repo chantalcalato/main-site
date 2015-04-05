@@ -1,6 +1,5 @@
 ﻿body {
   padding-top: 50px;
-  padding-bottom: 20px;
 }
 /* Set width on the form input elements since they're 100% wide by default */
 input,
@@ -48,6 +47,9 @@ input[type="checkbox"].input-validation-error {
 .w-100 {
   width: 100%;
 }
+.h-100 {
+  height: 100%;
+}
 .align-right {
   position: absolute;
   right: 0;
@@ -59,11 +61,9 @@ input[type="checkbox"].input-validation-error {
   position: relative;
 }
 .bottom-center-text {
-  border: 1px solid #f00;
   position: absolute;
-  right: 0;
   bottom: 0;
-  text-align: right;
+  text-align: center;
 }
 .content {
   padding: 15px 15px;
@@ -109,6 +109,13 @@ input[type="checkbox"].input-validation-error {
   background-repeat: no-repeat;
   background-position: center top;
 }
+.background-imgbuffalo {
+  background-image: url("images/buffalo-harbor-cropped.jpg");
+  background-size: cover;
+  min-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
 .background-light {
   background-color: #e8e8dd;
 }
@@ -121,22 +128,31 @@ input[type="checkbox"].input-validation-error {
 .background-dark h1 {
   color: #fcf8e3;
 }
+.background-black {
+  background-color: #000000;
+}
+.background-black p {
+  color: #fcf8e3;
+}
+.background-black h1 {
+  color: #fcf8e3;
+}
 .major-statement {
   display: block;
   font-size: 34px;
-  padding: 40px 0 40px 0;
+  padding: 70px 0 70px 0;
   font-weight: bold;
   position: relative;
 }
 .huge-statement {
   display: block;
   font-size: 88px;
-  padding: 40px 0 40px 0;
+  padding: 0 0 40px 0;
   font-weight: bold;
   position: relative;
 }
 .title {
-  padding-bottom: 10px;
+  padding-bottom: 70px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 .question {
@@ -149,6 +165,16 @@ input[type="checkbox"].input-validation-error {
   max-width: 1000px;
   width: 100%;
   padding: 120px 0 0 0;
+}
+.logo-sm {
+  padding-top: 5px;
+}
+.final-thought {
+  padding-top: 200px;
+  padding-bottom: 280px;
+  color: whitesmoke;
+  position: absolute;
+  left: 60%;
 }
 .post-it {
   width: 180px;
@@ -180,8 +206,57 @@ input[type="checkbox"].input-validation-error {
   position: relative;
   width: 100%;
 }
-.icon {
+.icon-container p {
+  text-align: center;
+  padding-top: 15px;
+}
+.icon-lg {
   width: 100px;
   height: 100px;
+}
+.icon-sm {
+  width: 50px;
+  height: 50px;
+}
+footer p {
+  padding: 30px 0 10px 0;
+}
+footer ul {
+  text-align: center;
+  padding: 0;
+}
+footer ul li {
+  display: inline-block;
+  padding: 5px 20px 5px 0;
+}
+.triangle {
+  left: 10px;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid black;
+}
+.triangle:after {
+  left: 10px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid #FFF;
+  position: absolute;
+  top: 38px;
+  content: '';
+}
+.triangle-down {
+  -ms-transform: rotate(180deg);
+  /* IE 9 */
+  -webkit-transform: rotate(180deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+  width: 100px;
+  height: auto;
+  position: absolute;
+  bottom: 0;
 }
 /*# sourceMappingURL=Site.css.map */

@@ -2,7 +2,7 @@
 
 body {
     padding-top: 50px;
-    padding-bottom: 20px;
+    //padding-bottom: 20px;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
@@ -65,6 +65,10 @@ input[type="checkbox"].input-validation-error {
     width: 100%;
 }
 
+.h-100 {
+    height: 100%;
+}
+
 .align-right {
     position: absolute;
     right: 0;
@@ -79,11 +83,9 @@ input[type="checkbox"].input-validation-error {
 }
 
 .bottom-center-text {
-    border: 1px solid #f00;
     position: absolute;
-    right: 0;
     bottom: 0;
-    text-align: right;
+    text-align: center;
 }
 
 .content {
@@ -130,6 +132,12 @@ input[type="checkbox"].input-validation-error {
     .background-keep-aspect;
 }
 
+.background-imgbuffalo {
+    background-image: url("images/buffalo-harbor-cropped.jpg");
+    .background-keep-aspect;
+}
+
+@color-chan-likes:            #b6aea3;
 @base-drafting-color:         rgb(244, 244, 239);
 @drafting-color:              darken(@base-drafting-color, 6%);
 @darkbg-color:                darken(@base-drafting-color, 80%);
@@ -150,12 +158,24 @@ input[type="checkbox"].input-validation-error {
     }
 }
 
+.background-black {
+    background-color: @close-color;
+
+    p {
+        color: @alert-warning-bg;
+    }
+
+    h1 {
+        color: @alert-warning-bg;
+    }
+}
+
 //===== Statements =======
 
 .major-statement {
     display: block;
     font-size: @font-size-larger;
-    padding: 40px 0 40px 0;
+    padding: 70px 0 70px 0;
     font-weight: bold;
     position: relative;
 }
@@ -163,13 +183,13 @@ input[type="checkbox"].input-validation-error {
 .huge-statement {
     display: block;
     font-size: @font-size-huge;
-    padding: 40px 0 40px 0;
+    padding: 0 0 40px 0;
     font-weight: bold;
     position: relative;
 }
 
 .title {
-    padding-bottom: 10px;
+    padding-bottom: 70px;
     font-family: @font-family-serif;
 }
 
@@ -184,6 +204,19 @@ input[type="checkbox"].input-validation-error {
     max-width:1000px;
     width:100%;
     padding: 120px 0 0 0;
+}
+
+.logo-sm {
+    padding-top: 5px;
+}
+
+.final-thought {
+    padding-top: 200px;
+    padding-bottom: 280px;
+    color: whitesmoke;
+
+    position: absolute;
+    left: 60%;
 }
 
 //====== Images and Blocks ========
@@ -226,9 +259,70 @@ input[type="checkbox"].input-validation-error {
     padding-top: 80px;
     position: relative;
     width: 100%;
+
+    p {
+        text-align: center;
+        padding-top: 15px;
+    }
 }
 
-.icon {
+.icon-lg {
     width: 100px;
     height: 100px;
+}
+
+.icon-sm {
+    width: 50px;
+    height: 50px;
+}
+
+footer {
+    p {
+        padding: 30px 0 10px 0;
+    }
+
+    ul {
+        text-align:center;
+        padding:0;
+
+        li {
+            display: inline-block;
+            padding: 5px 20px 5px 0;
+        }
+    }
+}
+
+//======= Shapes ==========
+
+.triangle {
+        left:10px;
+        width: 0; 
+        height: 0; 
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 100px solid black;
+    }
+    .triangle:after {
+        left:10px;
+        width: 0; 
+        height: 0; 
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 50px solid #FFF;
+        //left: 57px;
+        position: absolute;
+        top: 38px;
+        content: '';
+    }
+
+.triangle-down {
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+
+    width: 100px;
+    height: auto;
+
+    position: absolute;
+    bottom: 0;
 }
